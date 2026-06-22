@@ -1,3 +1,16 @@
+> [!IMPORTANT]
+> **本项目需要用户自行准备数据文件：`EOT20_ocean.nc`（约 600 MB）**
+> 
+> 该文件**没有**包含在本仓库中（因 GitHub 单文件 100 MB 限制）。
+> 请按以下步骤获取，否则程序无法运行：
+> 
+> 1. 访问 [TMD v3.0.0 Release 页面](https://github.com/chadagreene/Tide-Model-Driver/releases/tag/v3.0.0)
+> 2. 下载 `Source code (zip)` 并解压
+> 3. 找到 `Tide-Model-Driver-3.0.0/Model/EOT20/EOT20_ocean.nc`
+> 4. 复制到本项目 `src/input/` 文件夹下（如没有请手动创建）
+> 
+> 最终路径：`src/input/EOT20_ocean.nc`
+---
 # ADCIRC 潮汐开边界生成器 (tidal-open-boundary-generator)
 
 基于 EOT20 全球潮汐模型，自动生成 ADCIRC fort.15 所需的潮汐开边界强迫块。
